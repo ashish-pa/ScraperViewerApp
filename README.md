@@ -8,7 +8,7 @@ other third party sellers such as Amazon or Ebay.
 * Clone GitHub repo:
 
 ```
-git clone
+git clone https://github.com/ashish-pa/Books-R-Us.git
 ```
 
 ### Installing
