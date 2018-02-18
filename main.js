@@ -20,7 +20,9 @@ app.get('/', function(req, res) {
 });
 
 //default port to run on 8080
-app.listen(8080);
+app.listen(process.env.PORT || 8080, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 /*static resources config*/
 app.use('/app', express.static(path.join(__dirname + '/app')));
