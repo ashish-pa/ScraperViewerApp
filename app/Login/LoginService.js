@@ -3,7 +3,7 @@
  * Service authenticates user from login page
  * @author Ashish Patel
  */
-appServices.factory('LoginService', ['$resource', '$cookies', function($resource, $cookies) {
+appServices.factory('LoginService', ['$resource', '$cookies', '$state', function($resource, $cookies, $state) {
 
     return {
         login: login,
@@ -11,15 +11,13 @@ appServices.factory('LoginService', ['$resource', '$cookies', function($resource
         getCurrentUser: getCurrentUser
     };
 
-    var userObject = {};
-
     function getCurrentUser(){
-        return userObject;
+        var authToken = JSON.parse($cookies.get('token'));
+        return authToken.response.ucid;
     }
 
     function login(userCredentials){
-        userObject = setAuthentication().search({user: userCredentials});
-        return userObject;
+        return setAuthentication().search({user: userCredentials});
     }
 
     /*
@@ -38,8 +36,7 @@ appServices.factory('LoginService', ['$resource', '$cookies', function($resource
     }
 
     function logout(){
-        userObject = undefined;
         $cookies.remove('token');
-        return userObject;
+        $state.go('login');
     }
 }]);

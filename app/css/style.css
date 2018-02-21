@@ -1,3 +1,43 @@
+.nav{
+    position: fixed;
+}
+
 .login md-card {
     width: 400px;
+}
+
+.fabSpeedDialdemoBasicUsage .text-capitalize {
+  text-transform: capitalize; }
+
+.fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+  background-color: #000 !important; }
+
+.fabSpeedDialdemoBasicUsage p.note {
+  font-size: 1.2rem; }
+
+.fabSpeedDialdemoBasicUsage .lock-size {
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav-search{
+    background: white !important;
+    border-radius: 0px 3px 3px 0px !important;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    margin: 0 10px 0 0 !important;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 16px !important;
+}
+.nav-search svg{
+    fill: #9E9E9E;
+}
+
+.nav-search:hover svg{
+    fill: rgb(63, 81, 181);
 }

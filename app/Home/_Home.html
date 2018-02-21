@@ -4,5 +4,25 @@
 	<!-- Nav Bar -->
 	<div data-ui-view="nav"></div>
 
+
+	<div style="margin-top: 100px;" layout="row" layout-wrap layout-align="center center">
+		<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch data-ng-repeat="item in [1,2,3,4,5,6,7,8,9,10, 11 ,12, 13,14,15,16]">
+			<md-card-title>
+				<md-card-title-text>
+					<span class="md-headline">Card with image</span>
+					<span class="md-subhead">Large</span>
+				</md-card-title-text>
+				<md-card-title-media>
+					<div class="md-media-lg card-media"></div>
+				</md-card-title-media>
+			</md-card-title>
+			<md-card-actions layout="row" layout-align="end center">
+				<md-button>Action 1</md-button>
+				<md-button>Action 2</md-button>
+			</md-card-actions>
+		</md-card>
+	</div>
+
+
 </body>
 </html>

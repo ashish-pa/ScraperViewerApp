@@ -17,7 +17,7 @@
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>Password</label>
-						<input type="password" name="password" ng-model="vm.password" required />
+						<input type="password" name="password" ng-model="vm.password" required  data-ng-keyup="$event.keyCode == 13 ?login(vm) : console.log('no key event login')"/>
 					</md-input-container>
 					<md-input-container class="md-block">
 						<div layout="row" layout-align="center center">

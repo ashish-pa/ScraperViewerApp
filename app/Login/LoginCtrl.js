@@ -9,7 +9,7 @@ appControllers.controller('LoginCtrl', ['$scope', '$q', 'LoginService', '$state'
 
         }else{*/
              LoginService.login(cred).$promise.then(function(result){
-                console.log("user", result.response);
+                //console.log("user", result.response);
                 if (result.response == "undefined") {
                     //alert('username or password incorrect.')
                     $scope.showAlert();

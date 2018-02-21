@@ -32,14 +32,10 @@ var app = angular.module('BooksRUsApp', [
             .backgroundPalette('grey');
 
         $mdIconProvider
-            .icon("place","app/icons/ic_place_black_24px.svg")
-            .icon("phone","app/icons/ic_local_phone_black_24px.svg")
-            .icon("school","app/icons/ic_school_black_24px.svg")
-            .icon("search", "app/icons/ic_search_black_48px.svg")
-            .icon("responsive-ad", "app/icons/responsive-ad.svg");
+            .icon("search", "app/icons/ic_search_black_48px.svg");
     }])
     .run(function (LoginService){
-        LoginService.logout();
+        //LoginService.logout();
     });
     
 

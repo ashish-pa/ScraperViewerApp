@@ -12,7 +12,7 @@
 </head>
 
 <!--Loaded on page load-->
-<body data-ng-app="BooksRUsApp" layout="column" style="height:80%; width:100%; position:absolute; top:0px!important; overflow-y:hidden;">
+<body data-ng-app="BooksRUsApp" layout="column" style="height:80%; width:100%; position:absolute; top:0px!important;">
 	<!-- Default View loads _Home.html as per route.js config -->
 	<div data-ui-view="" id="screensize" flex ></div>
 
@@ -48,6 +48,9 @@
 
 	<!-- Nav Notifying Service-->
 	<script src="app/Shared/Nav/NavNotifyService.js"></script>
+
+	<!-- Sell Book controller -->
+	<script src="app/SellBook/SellBookCtrl.js"></script>
 
 	<!-- Data Service for populating data-->
 	<!--<script src="app/Shared/Data/ProvidersDataService.js"></script>-->

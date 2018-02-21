@@ -23,9 +23,9 @@ app.config(function($stateProvider, $urlRouterProvider) { //setup routing betwee
                             if (authToken == undefined) {
                                 console.log("User not authenticated!")
                                 $state.go('login');
-                            }else{
+                            }/*else{
                                  $state.go('home');
-                            }
+                            }*/
                          });
                     }
                 },
@@ -38,7 +38,32 @@ app.config(function($stateProvider, $urlRouterProvider) { //setup routing betwee
                         templateUrl: 'app/Shared/Nav/_NavView.html',
 						controller: 'NavCtrl'
                     }
-	    	}
+	    	    }
+	    	})
+            .state('sell', {
+                url: '/sell',
+                resolve: {
+                    auth: function(LoginService, $timeout, $state, $cookies) {
+                        $timeout(function() {
+                            var authToken = $cookies.get('token');
+                            console.log(authToken);
+                            if (authToken == undefined) {
+                                console.log("User not authenticated!")
+                                $state.go('login');
+                            }
+                         });
+                    }
+                },
+                views:{
+                    '':{
+                        templateUrl: 'app/SellBook/_SellBookView.html',
+                        controller: 'SellBookCtrl'
+                    },
+                    'nav@sell':{
+                        templateUrl: 'app/Shared/Nav/_NavView.html',
+                        controller: 'NavCtrl'
+                    }
+            }
 	    });
 	
 		//by default send to /home
