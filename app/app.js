@@ -13,7 +13,7 @@ var app = angular.module('BooksRUsApp', [
                 'Controllers',	//custom controllers
                 'Services',   //custom services
     ])
-    .config(['$mdThemingProvider','$mdIconProvider', function($mdThemingProvider, $mdIconProvider) { //app color config
+    .config(['$mdThemingProvider','$mdIconProvider', '$httpProvider', function($mdThemingProvider, $mdIconProvider, $httpProvider) { //app color config
         $mdThemingProvider.theme('default')
             .primaryPalette('blue', {
                 'default':'500',
@@ -33,6 +33,12 @@ var app = angular.module('BooksRUsApp', [
 
         $mdIconProvider
             .icon("search", "app/icons/ic_search_black_48px.svg");
+
+
+        /*delete $httpProvider.defaults.headers.common['X-Requested-With'];
+        $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+        $httpProvider.defaults.useXDomain = true;
+        $httpProvider.defaults.timeout = 1000;*/
     }])
     .run(function (LoginService){
         //LoginService.logout();

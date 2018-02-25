@@ -41,3 +41,29 @@
 .nav-search:hover svg{
     fill: rgb(63, 81, 181);
 }
+
+.mdcard-custom{
+    margin: 0px !important;
+}
+
+.min-width-130{
+    min-width: 130px;
+}
+
+#loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.mdcard-custom:hover{
+    cursor: pointer;
+    background-color: #bfc0c1;
+}
+
+.margin-right-15{
+    margin-right: 15px;
+}

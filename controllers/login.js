@@ -27,4 +27,19 @@ exports.authenticate = function(req, res){
         // handle errors
     })
 
+    /*console.log("In login.js before request...")
+
+          request({
+              url : 'https://cp4.njit.edu/cp/home/login',
+              method : "POST",
+               headers:
+                 { 'cache-control': 'no-cache',
+                   'content-type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+              form: { pass: 'ash101292', user: 'ajp38', uuid: '0xACA021' },
+
+          },function(err,res,body){
+              console.log("body below ????.");
+              console.log(body);
+          });*/
+
 };
