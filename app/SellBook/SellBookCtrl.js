@@ -4,8 +4,8 @@
  * Controller for _SellBookView.html
  * @uathor Ashish Patel
  */
-appControllers.controller('SellBookCtrl', ['$scope', 'NavNotifyingService', 'LoginService', 'SellerRequestService',
-                                   function($scope, NavNotifyingService, LoginService, SellerRequestService) {
+appControllers.controller('SellBookCtrl', ['$scope', 'NavNotifyingService', 'LoginService', 'SellerRequestService', '$mdDialog',
+                                   function($scope, NavNotifyingService, LoginService, SellerRequestService, $mdDialog) {
 
     $scope.book = {
         "name":"",
@@ -16,7 +16,8 @@ appControllers.controller('SellBookCtrl', ['$scope', 'NavNotifyingService', 'Log
         "city":"",
         "state":"NJ",
         "sellerEmail":"",
-        "image":""
+        "image":"",
+        "isbn13": ""
     };
 
     $scope.bookConditions = ['New','Like New','Used','Acceptable'];
@@ -30,10 +31,30 @@ appControllers.controller('SellBookCtrl', ['$scope', 'NavNotifyingService', 'Log
         $state.go('home');
     });*/
 
-    $scope.processSellBookRequest = function(){
+    $scope.processSellBookRequest = function($event){
         $scope.book["sellerUcid"] =  LoginService.getCurrentUser();
         console.log($scope.book);
         //make request to nodejs service to save in mongodb
-        SellerRequestService.save($scope.book);
+        SellerRequestService.save($scope.book).$promise.then(function(success){
+            if(success){
+                $scope.showAlert($event);
+            }
+        });
+
     };
+
+    $scope.showAlert = function(ev) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .clickOutsideToClose(true)
+            .title('Success')
+            .textContent('Book listed for sale')
+            .ariaLabel('successsaledialog')
+            .ok('Ok')
+            .targetEvent(ev)
+        )/*.finally(function() {
+            $state.go("home");
+         });*/
+      };
+
 }]);

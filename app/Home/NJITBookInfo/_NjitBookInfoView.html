@@ -7,7 +7,7 @@
 
     <md-dialog-content>
         <div class="md-dialog-content" layout="row" >
-            <div layout="column" flex="40">
+            <div layout="column" flex="40" layout-align="center center">
                 <img data-ng-src="{{currentBook.image}}" width="300" height="300"/>
             </div>
 
@@ -17,6 +17,10 @@
                     <tr>
                         <td class="min-width-130">Title</td>
                         <td>{{currentBook.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="min-width-130">ISBN-13</td>
+                        <td>{{currentBook.isbn13}}</td>
                     </tr>
                     <tr>
                         <td class="min-width-130">Edition</td>

@@ -22,6 +22,7 @@ exports.search = function(req, res){
         var query = {'$or':
                             [{'name':{'$regex':searchParam, '$options':'i'}},
                              {'author':{'$regex':searchParam, '$options':'i'}},
+                             {'isbn13':{'$regex':searchParam, '$options':'i'}},
                              {'edition':{'$regex':searchParam, '$options':'i'}}]};
 
         //query njit student/professor sell requests

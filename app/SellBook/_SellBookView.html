@@ -8,12 +8,16 @@
 
 	<md-content layout-padding>
 		<div>
-			<form name="bookForm" ng-submit="processSellBookRequest()">
+			<form name="bookForm" ng-submit="processSellBookRequest($event)">
 
 				<div layout-gt-sm="row">
 					<md-input-container class="md-block" flex-gt-sm>
 						<label>Book Name</label>
 						<input ng-model="book.name" ng-required="true">
+					</md-input-container>
+					<md-input-container class="md-block" flex-gt-sm>
+						<label>ISBN-13 #</label>
+						<input ng-model="book.isbn13" ng-required="true">
 					</md-input-container>
 				</div>
 

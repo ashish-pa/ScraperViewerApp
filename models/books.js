@@ -12,7 +12,8 @@ var BookSchema = new Schema({
   paymentMethod: String,
   city: String,
   state: String,
-  sellerEmail: String
+  sellerEmail: String,
+  isbn13: String
 });
 
 mongoose.model('Book', BookSchema, 'books'); //last param is collection name in mongo

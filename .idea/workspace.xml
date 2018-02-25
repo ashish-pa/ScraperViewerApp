@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8f4df8f-45eb-440c-b3b7-a248b3de3576" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Home/SearchBooksService.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/SellBook/SellerRequestService.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/controllers/sell.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/books.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Home/HomeCtrl.js" afterPath="$PROJECT_DIR$/app/Home/HomeCtrl.js" />
-      <change beforePath="$PROJECT_DIR$/app/Home/_Home.html" afterPath="$PROJECT_DIR$/app/Home/_Home.html" />
+      <change beforePath="$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html" afterPath="$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html" />
+      <change beforePath="$PROJECT_DIR$/app/Login/_LoginView.html" afterPath="$PROJECT_DIR$/app/Login/_LoginView.html" />
       <change beforePath="$PROJECT_DIR$/app/SellBook/SellBookCtrl.js" afterPath="$PROJECT_DIR$/app/SellBook/SellBookCtrl.js" />
-      <change beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change beforePath="$PROJECT_DIR$/app/SellBook/_SellBookView.html" afterPath="$PROJECT_DIR$/app/SellBook/_SellBookView.html" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
       <change beforePath="$PROJECT_DIR$/controllers/library.js" afterPath="$PROJECT_DIR$/controllers/library.js" />
-      <change beforePath="$PROJECT_DIR$/controllers/login.js" afterPath="$PROJECT_DIR$/controllers/login.js" />
-      <change beforePath="$PROJECT_DIR$/dao/mongoConnector.js" afterPath="$PROJECT_DIR$/dao/mongoConnector.js" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/routes.js" afterPath="$PROJECT_DIR$/routes.js" />
+      <change beforePath="$PROJECT_DIR$/models/books.js" afterPath="$PROJECT_DIR$/models/books.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,51 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Home/HomeCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mongoConnector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/mongoConnector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_NavView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Shared/Nav/_NavView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_NjitBookInfoView.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_NjitBookInfoView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="231">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#md-dialog-content#0;n#div#0;n#!!top" expanded="true" />
@@ -84,21 +33,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/css/style.css">
+      <file leaf-file-name="library.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/library.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            <state relative-caret-position="609">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_LoginView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Login/_LoginView.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="567">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellBookCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/SellBook/SellBookCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/books.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -114,7 +83,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_Home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_LoginView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Login/_LoginView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Home/_Home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -178,29 +157,29 @@
         <option value="$PROJECT_DIR$/app/SellBook/_SellBook.html" />
         <option value="$PROJECT_DIR$/app/routes.js" />
         <option value="$PROJECT_DIR$/app/Shared/Nav/NavCtrl.js" />
-        <option value="$PROJECT_DIR$/app/Login/_LoginView.html" />
         <option value="$PROJECT_DIR$/app/Shared/Nav/_NavView.html" />
-        <option value="$PROJECT_DIR$/app/SellBook/_SellBookView.html" />
         <option value="$PROJECT_DIR$/app/Login/LoginService.js" />
         <option value="$PROJECT_DIR$/app/Login/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/login.js" />
         <option value="$PROJECT_DIR$/app/SellBook/SellerRequestService.js" />
         <option value="$PROJECT_DIR$/models/book.js" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/models/books.js" />
         <option value="$PROJECT_DIR$/controllers/sell.js" />
         <option value="$PROJECT_DIR$/routes.js" />
-        <option value="$PROJECT_DIR$/controllers/library.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/Home/SearchBooksService.js" />
-        <option value="$PROJECT_DIR$/app/SellBook/SellBookCtrl.js" />
         <option value="$PROJECT_DIR$/dao/mongoConnector.js" />
         <option value="$PROJECT_DIR$/app/icons/ic_email_white_24px.svg" />
-        <option value="$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/Home/HomeCtrl.js" />
-        <option value="$PROJECT_DIR$/app/css/style.css" />
         <option value="$PROJECT_DIR$/app/Home/_Home.html" />
+        <option value="$PROJECT_DIR$/app/Login/_LoginView.html" />
+        <option value="$PROJECT_DIR$/app/css/style.css" />
+        <option value="$PROJECT_DIR$/models/books.js" />
+        <option value="$PROJECT_DIR$/controllers/library.js" />
+        <option value="$PROJECT_DIR$/app/SellBook/_SellBookView.html" />
+        <option value="$PROJECT_DIR$/app/SellBook/SellBookCtrl.js" />
+        <option value="$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html" />
       </list>
     </option>
   </component>
@@ -278,7 +257,17 @@
             <path>
               <item name="BooksRUs-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="BooksRUs-master" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksRUs-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksRUs-master" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksRUs-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksRUs-master" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518930127276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added search/save capabilities">
+      <created>1519526887025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519526887025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,7 +488,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Adding procfile for heroku" />
     <MESSAGE value="Changing port for Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing port for Heroku" />
+    <MESSAGE value="Added search/save capabilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search/save capabilities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,26 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SellBook/SellerRequestService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SellBook/_SellBookView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -740,22 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SellBook/SellBookCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="107" lean-forward="false" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/mongoConnector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -768,14 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -798,17 +755,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#md-dialog-content#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -825,6 +771,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Home/_Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Login/_LoginView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/library.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SellBook/SellBookCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SellBook/_SellBookView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -835,28 +847,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Login/_LoginView.html">
+    <entry file="file://$PROJECT_DIR$/app/Home/NJITBookInfo/_NjitBookInfoView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Home/_Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="231">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#md-dialog-content#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
