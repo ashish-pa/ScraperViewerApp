@@ -1,4 +1,4 @@
-# Providers Search Engine
+# Books-R-Us
 Books-R-Us allows NJIT students and professors to search text books either sold by students or
 other third party sellers such as Amazon or Ebay.
 
