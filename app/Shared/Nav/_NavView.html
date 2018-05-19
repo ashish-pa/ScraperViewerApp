@@ -1,50 +1,9 @@
-<!--Navigation bar-->
-<md-toolbar class="nav">
-    <div class="md-toolbar-tools">
-        <span flex></span>
-        <!--Nav bar auto complete-->
-        <md-autocomplete
-                md-input-name="autocomplete"
-                ng-model="searchVal"
-                ng-disabled="false"
-                md-no-cache="false"
-                md-search-text="searchInput"
-                data-ng-keyup = "$event.keyCode == 13 ? search(searchInput) : console.log('no key event')"
-                md-selected-item-change="search(searchInput)"
-                md-items=""
-                placeholder="Search"
-                flex="60"
-                md-menu-class="autocomplete-custom-template">
-        </md-autocomplete>
-        <!--Search icon for nav bar autocomplete-->
-        <md-button class="nav-search" ng-click="search(searchInput)" aria-label="search">
-            <md-icon md-svg-icon="search"></md-icon>
-        </md-button>
-        <span flex></span>
-
-
-
-        <md-menu md-offset="0 50">
-            <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
-                <md-icon md-menu-origin md-svg-src="app/icons/ic_face_white_24px.svg"></md-icon>
-            </md-button>
-            <md-menu-content width="4" >
-                <md-menu-item>
-                    <md-button ng-click="sellBook()">
-                        <div layout="row" flex>
-                            <p flex>Sell a book</p>
-                        </div>
-                    </md-button>
-                </md-menu-item>
-                <md-menu-item>
-                    <md-button ng-click="logout()">
-                        <div layout="row" flex>
-                            <p flex>Logout</p>
-                        </div>
-                    </md-button>
-                </md-menu-item>
-            </md-menu-content>
-        </md-menu>
-
-    </div>
-</md-toolbar>
+<div class="sample" layout="column" ng-cloak>
+    <md-content class="md-padding">
+        <!--md-autoselect -->
+        <md-tabs md-selected="selectedIndex" md-border-bottom md-swipe-content>
+            <md-tab ng-repeat="tab in channels" label="{{tab.channelName}}" ng-click="search(tab);">
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

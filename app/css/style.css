@@ -2,7 +2,6 @@
     background: url("../icons/banner.png") no-repeat center center fixed;
     background-size: cover;
 }*/
-
 .nav{
     position: fixed;
 }
@@ -71,4 +70,16 @@
 
 .margin-right-15{
     margin-right: 15px;
+}
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height: 0px;
+}
+
+iframe {
+    position: absolute;
+    background: #000;
+    border: none;
+    top: 130px; right: 0;
+    bottom: 0; left: 0;
 }

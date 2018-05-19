@@ -5,10 +5,11 @@
  * Set app theme color config and all svg icons to use throughout app
  * @author Ashish Patel
  */
-var app = angular.module('BooksRUsApp', [
+var app = angular.module('DesiWebApp', [
                 'ui.router', 	//for routing
                 'ngResource', 	//for services
                 'ngMaterial', //angular material library
+                'ngSanitize', //angular trusted video url
                 'ngCookies', //cookies
                 'Controllers',	//custom controllers
                 'Services',   //custom services
@@ -39,10 +40,7 @@ var app = angular.module('BooksRUsApp', [
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
         $httpProvider.defaults.useXDomain = true;
         $httpProvider.defaults.timeout = 1000;*/
-    }])
-    .run(function (LoginService){
-        //LoginService.logout();
-    });
+    }]);
     
 
 var appControllers = angular.module('Controllers', []);

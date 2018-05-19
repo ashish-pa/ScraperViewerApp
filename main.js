@@ -9,8 +9,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-require('./models/users');
-require('./models/books');
+require('./models/shows');
 require('./routes')(app);
 
 /*
@@ -21,7 +20,7 @@ app.get('/', function(req, res) {
 });
 
 //default port to run on 8080
-app.listen(process.env.PORT || 8080, function(){
+app.listen(process.env.PORT || 8094, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 

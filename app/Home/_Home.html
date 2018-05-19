@@ -7,57 +7,64 @@
 		<md-progress-circular md-mode="indeterminate"></md-progress-circular>
 	</div>
 
-	<div style="margin-top: 100px;" ></div>
-
-	<md-card ng-if="booksRUsItems.length != 0" flex>
-		<md-card-title>
-			<md-card-title-text>NJIT Seller Results ({{booksRUsItems.length}})</md-card-title-text>
-		</md-card-title>
-
+	<md-card flex ng-if="showShows">
 		<div layout="row" layout-wrap>
-			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="item in booksRUsItems" flex="20" ng-click="additionalInfo($event, item);">
+			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="show in shows" flex="20" ng-click="loadDates(show);">
 				<md-card-title>
 					<md-card-title-text class="margin-right-15">
-						<span class="md-subhead">{{item.name}}</span>
-						<span class="md-subhead">Edition: {{item.edition}}</span>
-						<span class="md-subhead">Author: {{item.author}}</span>
+						<span class="md-subhead">{{show.showName}}</span>
 					</md-card-title-text>
 					<md-card-title-media>
 						<div class="md-media-lg card-media">
-							<img ng-src="{{item.image}}"/>
+							<img ng-src="{{show.showImageUrl}}"/>
 						</div>
 					</md-card-title-media>
 				</md-card-title>
-				<md-card-content layout="row" layout-align="end center">
-					<span>${{item.cost}}</span>
+				<!--<md-card-content layout="row" layout-align="center center">
+					<span>{{show.showName}}</span>
+				</md-card-content>-->
+			</md-whiteframe>
+		</div>
+	</md-card>
+
+	<md-card flex ng-if="showDates">
+		<div layout="row" layout-wrap>
+			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="date in dates" flex="20" ng-click="loadShowSources(date);">
+				<md-card-title>
+					<md-card-title-text class="margin-right-15">
+						<span class="md-subhead">{{date.showDate}}</span>
+					</md-card-title-text>
+				</md-card-title>
+				<!--<md-card-content layout="row" layout-align="center center">
+					<span>{{show.showName}}</span>
+				</md-card-content>-->
+			</md-whiteframe>
+		</div>
+	</md-card>
+
+	<md-card flex ng-if="showSources">
+		<div layout="column" layout-wrap>
+			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="source in sources" flex="20" ng-click="loadShowParts(source);">
+				<md-card-content layout="row" layout-align="center center">
+					<span>{{source.sourceName}}</span>
 				</md-card-content>
 			</md-whiteframe>
 		</div>
 	</md-card>
 
-	<md-card ng-if="ebayItems.length != 0" flex >
-		<md-card-title>
-			<md-card-title-text>Ebay Results ({{ebayItems.length}})</md-card-title-text>
-		</md-card-title>
-
-		<div layout="row" layout-wrap layout-fill >
-			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="item in ebayItems" flex="20" ng-click="openUrl(item.viewItemURL[0]);">
-				<md-card-title>
-					<md-card-title-text class="margin-right-15">
-						<span class="md-subhead">{{item.title[0]}}</span>
-					</md-card-title-text>
-					<md-card-title-media>
-						<div class="md-media-lg card-media">
-							<img ng-src="{{item.galleryURL[0]}}"/>
-						</div>
-					</md-card-title-media>
-				</md-card-title>
-				<md-card-content layout="row" layout-align="end center">
-					<span>${{item.sellingStatus[0].currentPrice[0].__value__}}</span>
+	<md-card flex ng-if="showParts">
+		<div layout="row" layout-wrap>
+			<md-whiteframe class="md-whiteframe-1dp mdcard-custom" layout="column" data-ng-repeat="(key, value) in currentSelection.showPartUrls" flex ng-click="setCurrentVideoUrl(value);">
+				<md-card-content layout="row" layout-align="center center">
+					<span>{{key}}</span>
 				</md-card-content>
 			</md-whiteframe>
 		</div>
 	</md-card>
+
+	<div flex ng-if="showVideo">
+		<iframe height="100%" widht="100%" style="width: 100%; height: 100%; margin: 0" src="{{trustSrc(currentSelection.showUrl)}}"></iframe>
+	</div>
 
 
 </div>
